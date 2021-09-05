@@ -6578,6 +6578,12 @@ video {
   min-height: 100%;
 }
 
+@media (min-width: 550px){
+  .min-h-home-lg {
+    min-height:75vh
+  }
+}
+
 .min-h-screen {
   min-height: 100vh;
 }

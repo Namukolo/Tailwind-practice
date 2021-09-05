@@ -9,7 +9,7 @@
     <title>Apple</title>
 </head>
 <body class="bg-black">
-    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-5">
         <div class="container px-4 m-auto flex flex-wrap items-center justify-between border-red-900 ">
             <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
                 <a href="" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2  whitespace-nowrap uppercase text-white tracking-wider">
@@ -75,6 +75,22 @@
             </div>
         </div>
     </nav>
+    <main>
+        <div class="relative pt-32 lg:pb-32 flex content-center items-center justify-center min-h-full min-h-home-lg" id="home" >
+            <div class="absolute w-full h-full overflowx-hidden">
+                <video autoplay muted class="top-0 bg-center mx-auto">
+                <source src="https://apple.com//105/media/us/macbook-pro-13/2020/f2b14406-42ad-405e-bfa0-71b52a0bfd67/anim/chip/medium.mp4">
+            </video>
+            </div>
+            <div class="container relative mx-auto mr-auto text-center hidden md:block">
+                <div class="pr-12">
+                    <h1 class="text-white font-semibold text-5xl -mt-32 ">
+                        All systems Pro.
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </main>
     <script>
         function toggleNavbar(collapseID){
             document.getElementById(collapseID).classList.toggle('hidden');
