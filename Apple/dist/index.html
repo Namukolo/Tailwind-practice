@@ -9,6 +9,77 @@
     <title>Apple</title>
 </head>
 <body class="bg-black">
-    
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3">
+        <div class="container px-4 m-auto flex flex-wrap items-center justify-between border-red-900 ">
+            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                <a href="" class="text-sm font-bold leading-relaxed inline-block mr-4 py-2  whitespace-nowrap uppercase text-white tracking-wider">
+                    Home
+                </a>
+                <button class="curser-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden lg:outline-none focus:outline-none" onclick="toggleNavbar('collapse-nav')" type="button">
+                    <i class="text-white fas fa-bars">
+                    </i>
+                </button>
+            </div>
+           
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden" id="collapse-nav">
+                <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                    <li class="flex items-center">
+                        <a href="#ipad" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center uppercase font-semibold tracking-wider" id="ipad">
+                            <i class="lg:text-gray-300 text-gray-500 fas fa-tablet text-lg leading-lg mr-2"></i>
+                            Ipad
+                        </a>
+                    </li>
+
+                    <li class="flex items-center">
+                        <a href="#macbook" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center uppercase font-semibold tracking-wider">
+                            <i class="lg:text-gray-300 text-gray-500 fas fa-laptop text-lg leading-lg mr-2"></i>
+                            Macbook
+                        </a>
+                    </li>
+
+                    <li class="flex items-center">
+                        <a href="#team" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center uppercase font-semibold tracking-wider" id="ipad">
+                            <i class="lg:text-gray-300 text-gray-500 fas fa-users text-lg leading-lg mr-2"></i>
+                            Team
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="#contact" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center uppercase font-semibold tracking-wider" id="ipad">
+                            <i class="lg:text-gray-300 text-gray-500 fas fa-phone-alt text-lg leading-lg mr-2"></i>
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                    <li class="flex items-center">
+                        <a href="" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-semibold uppercase">
+                            <i class="lg:hover:grey-300 lg:text-white text-gray-500 fab fa-facebook text-lg leading-lg">
+                                <span class="lg:hidden inline-block ml-2"></span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <a href="" class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs font-semibold uppercase">
+                            <i class="lg:hover:grey-300 lg:text-white text-gray-500 fab fa-twitter text-lg leading-lg">
+                                <span class="lg:hidden inline-block ml-2"></span>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="flex items-center">
+                        <button class="lg:bg-white lg:text-gray-800 bg-black text-white active:bg-gray-100 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 tracking-wider" type="button">
+                            <i class="mr-2 fas fa-arrow-circle-down"></i>
+                            Buy new Macbook</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        function toggleNavbar(collapseID){
+            document.getElementById(collapseID).classList.toggle('hidden');
+            document.getElementById(collapseID).classList.toggle('block')
+        }
+    </script>
 </body>
 </html>
